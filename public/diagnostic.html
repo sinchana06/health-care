@@ -1,0 +1,106 @@
+<html>
+
+<head>
+    <title>Diagonostics</title>
+    <style>
+        .card-registration .select-input.form-control[readonly]:not([disabled]) {
+            font-size: 1rem;
+            line-height: 2.15;
+            padding-left: .75em;
+            padding-right: .75em;
+        }
+
+        .card-registration .select-arrow {
+            top: 13px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+
+<body>
+    <section class="h-100 bg-dark">
+        <div class="container py-5 h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col" style="height: 600px;">
+                    <div class="card card-registration my-4">
+                        <div class="row g-0">
+                            <div class="col-xl-6 d-none d-xl-block">
+                                <img src="diagonstic.PNG" alt="Sample photo" class="img-fluid"
+                                    style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem; height:500px;" />
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="card-body text-black">
+                                    <h3 class="mb-5 text-uppercase">Diagonostics Info</h3>
+
+                                    <div class="row">
+                                        <div>
+                                            <div class="form-outline">
+                                                <h3>You need to get these basic tests done</h3>
+                                                <ul>
+                                                    <li style="font-size: 25px;">CBC test</li>
+                                                    <li style="font-size: 25px;">Diabetes test</li>
+                                                    <li style="font-size: 25px;">Cholestrol test</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- <div class="row">
+                                        <div class="col-md-6 mb-4">
+                                            <div class="form-outline">
+                                                <input type="text" id="form3Example1m1"
+                                                    class="form-control form-control-lg" />
+                                                <label class="form-label" for="form3Example1m1">Mother's name</label>
+                                            </div>
+                                        </div> -->
+                                    <div class="container" style="position: relative;top:30px;">
+                                        <div class = "row">
+                                        <div class="col">
+                                            <button style="background-color: lightblue;" id = "diag">
+                                                <h4>Diagonostics</h4>
+                                            </button>
+                                            <p><i class="fa fa-info-circle"></i>If not done, get your nearby diagonostics here</p>
+                                        </div>
+                                        <div class="col">
+                                            <button id = "res" style="background-color: lightblue;">
+                                                <h5>Upload Results</h5>
+                                            </button>
+                                            <p><i class="fa fa-info-circle"></i>If done, upload your results here</p>
+                                        </div>
+                                        <div class = "row">
+                                            <div class="col">
+                                                <button style="background-color: lightblue;" id = "the">
+                                                    <h4>Therapist</h4>
+                                                </button>
+                                                <p><i class="fa fa-info-circle"></i>In case of any psychological issues, please do visit the centers mentioned</p>
+                                            </div>
+                                    </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        document.getElementById("diag").onclick = function () {
+            location.href = "https://www.google.com/maps/search/diagnostics+near+me/";
+        };
+    </script>
+    <script type="text/javascript">
+        document.getElementById("res").onclick = function () {
+            location.href = "results.html";
+        };
+    </script>
+    <script type="text/javascript">
+        document.getElementById("the").onclick = function () {
+            location.href = "https://www.google.com/maps/search/therepist+near+me/";
+        };
+    </script>
+</body>
